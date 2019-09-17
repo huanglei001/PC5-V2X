@@ -1,0 +1,58 @@
+﻿  wt.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\wt.cpp(85): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\wt.cpp(106): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\wt.cpp(168): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  vue_physics.cpp
+  vue.cpp
+  tmc.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(368): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(371): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  system_control.cpp
+  route_udp.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(368): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(371): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.cpp(25): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.cpp(91): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.cpp(191): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.cpp(658): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  object.cpp
+  invoke.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(368): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\route_udp.h(371): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  context.cpp
+  bean_loader.cpp
+e:\program files\visual studio\vc\include\utility(172): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  f:\v2x project\pc-5\v2v_route_broadcast_git\reflect\bean_loader.cpp(133): note: 参见对正在编译的函数 模板 实例化“std::pair<const _Kty,_Ty>::pair<std::string&,unsigned __int64,void,0>(_Other1,_Other2 &&) noexcept(false)”的引用
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Other1=std::string &,
+              _Other2=unsigned __int64
+          ]
+  f:\v2x project\pc-5\v2v_route_broadcast_git\reflect\bean_loader.cpp(133): note: 参见对正在编译的函数 模板 实例化“std::pair<const _Kty,_Ty>::pair<std::string&,unsigned __int64,void,0>(_Other1,_Other2 &&) noexcept(false)”的引用
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Other1=std::string &,
+              _Other2=unsigned __int64
+          ]
+  bean_definition.cpp
+  main.cpp
+  imta.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\imta.cpp(348): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\imta.cpp(539): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\imta.cpp(873): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  gtt_urban.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(95): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(223): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(1063): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(1067): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(1068): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_urban.cpp(1069): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+  gtt_highspeed.cpp
+f:\v2x project\pc-5\v2v_route_broadcast_git\gtt_highspeed.cpp(40): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  V2V_Route_Broadcast.vcxproj -> F:\V2X Project\PC-5\V2V_Route_Broadcast_git\x64\Debug\V2V_Route_Broadcast.exe
+  V2V_Route_Broadcast.vcxproj -> F:\V2X Project\PC-5\V2V_Route_Broadcast_git\x64\Debug\V2V_Route_Broadcast.pdb (Partial PDB)

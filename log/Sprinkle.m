@@ -1,0 +1,15 @@
+clear all;
+[data1,data2] = textread('vue_coordinate.txt','%n%n');
+figure;
+plot(data1,data2,'b.');
+hold on;
+[data3,data4]=textread('pue_coordinate.txt','%n%n');
+ plot(data3,data4,'r.');
+%  axis([-1000 1000 -1000 1000]);
+xlabel('x/m','LineWidth',2);
+ylabel('y/m','LineWidth',2);
+legend('Vehicle','Pedestrian');
+% [data11,data22] = textread('vue_coordinate_fresh.txt','%n%n');
+% figure;
+% plot(data11,data22,'b.');
+% hold on;

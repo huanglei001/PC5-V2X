@@ -1,0 +1,22 @@
+﻿  gtt_urban.cpp
+gtt_urban.cpp(95): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+gtt_urban.cpp(223): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+gtt_urban.cpp(1063): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+gtt_urban.cpp(1067): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+gtt_urban.cpp(1068): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+gtt_urban.cpp(1069): warning C4244: “初始化”: 从“double”转换到“std::size_t”，可能丢失数据
+  imta.cpp
+imta.cpp(348): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+imta.cpp(539): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+imta.cpp(873): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  wt.cpp
+wt.cpp(85): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+wt.cpp(106): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+wt.cpp(168): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码
+  54 of 4471 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    15 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  V2V_Route_Broadcast.vcxproj -> H:\V2P项目程序\PC5\moushadow0912\V2V_Route_Broadcast_git\x64\Release\V2V_Route_Broadcast.exe
+  V2V_Route_Broadcast.vcxproj -> H:\V2P项目程序\PC5\moushadow0912\V2V_Route_Broadcast_git\x64\Release\V2V_Route_Broadcast.pdb (Full PDB)

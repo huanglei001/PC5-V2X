@@ -1,0 +1,34 @@
+﻿  wt.cpp
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\wt.cpp(79): warning C4018: “<”: 有符号/无符号不匹配
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\wt.cpp(88): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\wt.cpp(149): warning C4018: “<”: 有符号/无符号不匹配
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\wt.cpp(159): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  vue_physics.cpp
+  vue.cpp
+  tmc.cpp
+  system_control.cpp
+  route_udp.cpp
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\route_udp.cpp(25): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\route_udp.cpp(603): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\route_udp.cpp(699): warning C4018: “<”: 有符号/无符号不匹配
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\route_udp.cpp(727): warning C4018: “<”: 有符号/无符号不匹配
+  object.cpp
+  invoke.cpp
+  context.cpp
+  bean_loader.cpp
+  bean_definition.cpp
+  main.cpp
+  imta.cpp
+  gtt_urban.cpp
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\gtt_urban.cpp(92): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\gtt_urban.cpp(217): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\gtt_urban.cpp(893): warning C4101: “los”: 未引用的局部变量
+  gtt_highspeed.cpp
+h:\v2p项目程序\pc5\v2v_route_broadcast\v2v_route_broadcast_git\gtt_highspeed.cpp(40): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+imta.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_execute，该符号在函数 "public: void __thiscall imta::calculate(double *,double,double *,double *,double *,double *,double *)" (?calculate@imta@@QAEXPANN00000@Z) 中被引用
+imta.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_plan_dft_1d，该符号在函数 "public: void __thiscall imta::calculate(double *,double,double *,double *,double *,double *,double *)" (?calculate@imta@@QAEXPANN00000@Z) 中被引用
+imta.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_destroy_plan，该符号在函数 "public: void __thiscall imta::calculate(double *,double,double *,double *,double *,double *,double *)" (?calculate@imta@@QAEXPANN00000@Z) 中被引用
+imta.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_malloc，该符号在函数 "public: void __thiscall imta::calculate(double *,double,double *,double *,double *,double *,double *)" (?calculate@imta@@QAEXPANN00000@Z) 中被引用
+imta.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_free，该符号在函数 "public: void __thiscall imta::calculate(double *,double,double *,double *,double *,double *,double *)" (?calculate@imta@@QAEXPANN00000@Z) 中被引用
+H:\V2P项目程序\PC5\V2V_Route_Broadcast\V2V_Route_Broadcast_git\Debug\V2V_Route_Broadcast.exe : fatal error LNK1120: 5 个无法解析的外部命令

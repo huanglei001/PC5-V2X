@@ -1,0 +1,23 @@
+vuenum:750
+rsunum:0
+total success event: 401899
+total first success event: 401899
+total second success event: 0
+total failed event: 1465061
+total event number:1866960
+pdr:21.5269%
+event trigger times:7500
+total broadcast number:7500
+total send_broadcast number:7500
+total event num all:0
+total source_broadcast number:0
+total forward_broadcast number:0
+total pop number:0
+total second pop number:0
+total delete number:0
+total center number:0
+total received center number:0
+received center ratio:-nan(ind)
+total close center number:0
+total close received center number:0
+received close center ratio:-nan(ind)

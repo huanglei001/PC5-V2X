@@ -1,0 +1,10 @@
+[data1,data2] = textread('locations.txt','%n%n');
+plot(data1,data2,'bx');
+hold on;
+[data3,data4,data5,data6]=textread('sending_locations.txt','%n%n%n%n');
+plot(data3,data4,'rx');
+pattern=[data5 data6];
+[data7,data8]=textread('failure_locations.txt','%n%n');
+plot(data7,data8,'kx');
+hold on;
+% rectangle('Position',[data3-1000,data4-1000,2000,2000],'Curvature',[1,1]);

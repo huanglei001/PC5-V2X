@@ -1,0 +1,149 @@
+﻿<bean id="global_control_config", class="global_control_config">
+	<property name="ntti", value="1000"/>
+	<property name="max_distance", value="500"/>
+	<property name="max_delay", value="100"/>
+	<property name="small_scale", value="1"/>
+	<!--广播算法
+		1:V2V
+		2:V2P
+		3:P2V
+		4:V2V+V2P
+    5:V2V+P2V
+    6:V2P+P2V
+    7：V2V+V2P+P2V
+	-->
+	<property name="select_broadcast_algorithm", value="1"/>
+	<!--1:简单车辆广播
+	-->
+	<property name="hop_num", value="1"/>
+	<!--2:简单RSU广播
+	-->
+	<property name="rsu_num", value="2"/>
+  <property name="carrier_frequency", value="6"/>
+  <property name="send_power", value="23"/>
+    <property name="noise_figure", value="9"/>
+</bean>
+
+
+<bean id="gtt_highspeed_config", class="gtt_highspeed_config">
+	<property name="road_length", value="2000"/>
+	<property name="road_width", value="4.0"/>
+	<property name="speed", value="140"/>
+	<property name="freshtime", value="100"/>
+	<property name="rsu_space", value="100"/>
+	
+	<property name="time", ref-id="time"/>
+</bean>
+
+
+<bean id="gtt_urban_config", class="gtt_urban_config">
+	<property name="road_length_ew", value="419"/>
+	<property name="road_length_sn", value="236"/>
+	<property name="road_width", value="7.0"/>
+  <property name="pue_road_length_ew", value="413"/>
+  <property name="pue_road_length_sn", value="230"/>
+  <property name="pue_road_width", value="3.0"/>
+	<property name="vue_speed", value="60"/>
+  <property name="pue_speed", value="3"/>
+  <property name="pue_num", value="500"/>
+	<property name="freshtime", value="100"/>
+    <property name="double_road", value="1"/>	
+	<property name="time", ref-id="time"/>
+</bean>
+
+<bean id="rrm_config", class="rrm_config">
+	<property name="total_bandwidth", value="10"/>
+	<property name="rb_num_per_pattern", value="25"/>
+	<property name="drop_sinr_boundary", value="1.99"/>
+	<property name="packet_pattern_number", value="1"/>
+	<property name="mcs_level", value="9"/>
+	<!--资源选择基本算法
+		1:随机选择
+		2:载波侦听
+	-->
+	<property name="select_algorithm", value="1"/>
+	<!--资源选择改进算法
+	    0:不使用改进算法
+		  1:资源预留算法
+	-->
+	<property name="enhance_select_algorithm", value="0"/>
+	<property name="send_interval", value="10"/>
+	<pre-processor method_name="set_pattern_num"/>
+</bean>
+
+
+<bean id="tmc_config", class="tmc_config">
+	<property name="package_num", value="1"/>
+	<property name="trigger_rate", value="1"/>
+</bean>
+
+
+<bean id="route_config", class="route_config">
+	<property name="interval", value="100"/>
+</bean>
+
+<bean id="time", class="v2x_time">
+	<property name="tti", value="0"/>
+</bean>
+
+<bean id="system_control", class="system_control">
+	<property name="time", ref-id="time"/>
+	<property name="gtt", ref-id="gtt"/>
+	<property name="route", ref-id="route"/>
+	<property name="tmc", ref-id="tmc"/>
+	<property name="wt", ref-id="wt"/>
+	<property name="global_control_config", ref-id="global_control_config"/>
+</bean>
+
+
+
+<!--<bean id="gtt", class="gtt_highspeed">	
+	<property name="time", ref-id="time"/>
+	<property name="config", ref-id="gtt_highspeed_config"/>
+	<property name="rrm_config", ref-id="rrm_config"/>
+	
+	<post-processor method_name="initialize"/>
+	<dependency ref-id="gtt_highspeed_config"/>
+	<dependency ref-id="rrm_config"/>
+</bean>-->
+
+
+<bean id="gtt", class="gtt_urban">	
+	<property name="time", ref-id="time"/>
+	<property name="config", ref-id="gtt_urban_config"/>
+	<property name="rrm_config", ref-id="rrm_config"/>
+	
+	<post-processor method_name="initialize"/>
+	<dependency ref-id="gtt_urban_config"/>
+	<dependency ref-id="rrm_config"/>
+</bean>
+
+
+
+<bean id="route", class="route_udp">	
+	<property name="time", ref-id="time"/>
+	<property name="gtt", ref-id="gtt"/>
+	<property name="wt", ref-id="wt"/>
+	<property name="rrm_config", ref-id="rrm_config"/>
+	<property name="tmc_config", ref-id="tmc_config"/>
+	<property name="route_config", ref-id="route_config"/>
+	
+	<post-processor method_name="initialize"/>
+	<dependency ref-id="gtt"/>
+	<dependency ref-id="wt"/>
+	<dependency ref-id="rrm_config"/>
+	<dependency ref-id="tmc_config"/>
+	<dependency ref-id="route_config"/>
+</bean>
+
+<bean id="tmc", class="tmc">	
+	
+</bean>
+
+<bean id="wt", class="wt">	
+	<pre-processor method_name="set_resource"/>
+</bean>
+
+
+
+
